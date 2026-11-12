@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/dashboardFragment"
-        android:name="com.example.tenantmanagementapp.DashboardFragment"
+        android:name="com.example.tenantmanagementapp.ui.dashboard.DashboardFragment"
         android:label="Dashboard"
         tools:layout="@layout/fragment_dashboard">
 
@@ -30,7 +30,7 @@
 
     <fragment
         android:id="@+id/addTenantFragment"
-        android:name="com.example.tenantmanagementapp.AddTenantFragment"
+        android:name="com.example.tenantmanagementapp.ui.tenants.AddTenantFragment"
         android:label="Add Tenant"
         tools:layout="@layout/fragment_add_tenant">
 
@@ -42,13 +42,13 @@
 
     <fragment
         android:id="@+id/viewTenantsFragment"
-        android:name="com.example.tenantmanagementapp.ViewTenantsFragment"
+        android:name="com.example.tenantmanagementapp.ui.tenants.ViewTenantsFragment"
         android:label="View Tenants"
         tools:layout="@layout/fragment_view_tenants">
 
         <argument
             android:name="newTenant"
-            app:argType="com.example.tenantmanagementapp.Tenant"
+            app:argType="com.example.tenantmanagementapp.data.model.Tenant"
             app:nullable="true"
             android:defaultValue="@null" />
     </fragment>
