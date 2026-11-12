@@ -11,3 +11,11 @@ An Android app for landlords to record tenants, see total rent, and call tenants
 ui/ Activities, Fragments and TenantViewModel (UI layer)
 data/ Tenant, TenantDao, TenantDatabase, TenantRepository (data layer)
 Screens -> TenantViewModel (LiveData) -> TenantRepository -> Room
+
+## Team
+| Stage | Member | Admission No. |
+|-------|--------|---------------|
+| 1 (Lead) + Architecture Setup (Stages 2, 3 & 4) | Wesley Ralph Kyarua | 167044 |
+| 3 & 5 (Database & Room Completion) | Katama David Michael | 167409 | 
+| 2 & 5 (ViewModel & Logic Completion) | Patricia Tugumisirize | 193183 | 
+| 4 & 6 (UI Connections & v1.0 Release) | Lowena Ahumuza | 191339 | 
