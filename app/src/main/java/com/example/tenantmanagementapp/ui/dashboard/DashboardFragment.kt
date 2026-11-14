@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.tenantmanagementapp.databinding.FragmentDashboardBinding
-import com.example.tenantmanagementapp.ui.viewmodel.TenantViewModel
+import com.example.tenantmanagementapp.ui.TenantViewModel
 
 class DashboardFragment : Fragment() {
 

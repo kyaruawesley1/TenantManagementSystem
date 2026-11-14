@@ -4,7 +4,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.example.tenantmanagementapp.ui.viewmodel.TenantViewModel" />
+            type="com.example.tenantmanagementapp.ui.TenantViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
