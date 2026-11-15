@@ -17,8 +17,7 @@ class ViewTenantsFragment : Fragment() {
     private val binding get() = _binding!!
 
     private val args: ViewTenantsFragmentArgs by navArgs()
-
-    // The SHARED ViewModel
+    
     private val viewModel: TenantViewModel by activityViewModels()
 
     override fun onCreateView(
@@ -47,7 +46,6 @@ class ViewTenantsFragment : Fragment() {
             }
         }
 
-        // OBSERVER: runs now, and again every time allTenantsText changes
         viewModel.allTenantsText.observe(viewLifecycleOwner) { text ->
             binding.allTenantsTextView.text = text
         }

@@ -15,7 +15,6 @@ class AddTenantFragment : Fragment() {
     private var _binding: FragmentAddTenantBinding? = null
     private val binding get() = _binding!!
 
-    // The SHARED ViewModel
     private val viewModel: TenantViewModel by activityViewModels()
 
     override fun onCreateView(
@@ -31,20 +30,19 @@ class AddTenantFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.saveButton.setOnClickListener {
-            // UI JOB: collect the input. The ViewModel trims, checks and saves it
             val tenant = viewModel.addTenant(
                 binding.tenantNameEditText.text.toString(),
                 binding.phoneEditText.text.toString(),
                 binding.rentEditText.text.toString()
             )
 
-            // null = rejected. UI JOB: tell the user
+           
             if (tenant == null) {
                 Toast.makeText(requireContext(), "Please fill in all fields", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
-            // UI JOB: navigate with Safe Args
+          
             val action = AddTenantFragmentDirections.actionAddTenantFragmentToViewTenantsFragment(tenant)
             findNavController().navigate(action)
         }
